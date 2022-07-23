@@ -35,40 +35,40 @@
     padding-right: 2px;
     margin: 0 0 18px 0;
   }
-}
 
-.banner__title {
-  font-weight: $font-weight-700;
-  font-size: $font-size-base + 30;
-  line-height: $line-height-base + 35;
-  margin-bottom: 24px;
-  color: $carnation;
+  h3 {
+    font-weight: $font-weight-700;
+    font-size: $font-size-base + 30;
+    line-height: $line-height-base + 35;
+    margin-bottom: 24px;
+    color: $carnation;
 
-  @include breakpoint($tablet) {
-    font-size: $font-size-base + 18;
-    line-height: $line-height-base + 21;
-    margin-bottom: 17px;
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 18;
+      line-height: $line-height-base + 21;
+      margin-bottom: 17px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 8;
+      line-height: $line-height-base + 10;
+      margin-bottom: 10px;
+    }
   }
 
-  @include breakpoint($mobile) {
-    font-size: $font-size-base + 8;
+  p {
+    font-size: $font-size-base + 6;
     line-height: $line-height-base + 10;
-    margin-bottom: 10px;
-  }
-}
+    color: $mischka;
 
-.banner__text {
-  font-size: $font-size-base + 6;
-  line-height: $line-height-base + 10;
-  color: $mischka;
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 3;
+      line-height: $line-height-base + 6;
+    }
 
-  @include breakpoint($tablet) {
-    font-size: $font-size-base + 3;
-    line-height: $line-height-base + 6;
-  }
-
-  @include breakpoint($mobile) {
-    font-size: $font-size-base - 4;
-    line-height: $line-height-base - 3;
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 3;
+    }
   }
 }

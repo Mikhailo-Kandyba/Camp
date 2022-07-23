@@ -52,7 +52,7 @@
     max-width: inherit;
   }
 
-  @include breakpoint($mobile) {
+  @include breakpoint($tablet) {
     flex-direction: column;
     min-height: 100vh;
     background: $steel-gray;
@@ -69,7 +69,6 @@
       display: block;
       padding: 80px 15px;
       background: $steel-gray;
-      //min-height: 100vh;
       min-width: inherit;
       text-align: center;
     }
