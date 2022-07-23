@@ -1,0 +1,47 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.br-md {
+  display: none;
+
+  @include breakpoint($tablet) {
+    display: block;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.display-md-none {
+  @include breakpoint($tablet) {
+    display: none !important;
+  }
+}
+
+.display-md-block {
+  display: none !important;
+
+  @include breakpoint($tablet) {
+    display: block !important;
+  }
+}
+
+.display-sm-none {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.p-sm-0 {
+  @include breakpoint($mobile) {
+    padding: 0;
+  }
+}
+
+.w-32-sm {
+  @include breakpoint($mobile) {
+    width: 32px !important;
+  }
+}
+

@@ -1,0 +1,74 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 102px 0;
+  margin-bottom: 85px;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    padding: 70px 15px;
+    margin-bottom: 119px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 37px 3px;
+    margin-bottom: 40px;
+  }
+}
+
+.banner__text-area {
+  max-width: 620px;
+  width: 100%;
+  text-align: left;
+  margin-right: 10px;
+
+  @include breakpoint($tablet) {
+    max-width: 100%;
+    margin: 0 0 21px 0;
+  }
+
+  @include breakpoint($mobile) {
+    padding-right: 2px;
+    margin: 0 0 18px 0;
+  }
+}
+
+.banner__title {
+  font-weight: $font-weight-700;
+  font-size: $font-size-base + 30;
+  line-height: $line-height-base + 35;
+  margin-bottom: 24px;
+  color: $carnation;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 18;
+    line-height: $line-height-base + 21;
+    margin-bottom: 17px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 8;
+    line-height: $line-height-base + 10;
+    margin-bottom: 10px;
+  }
+}
+
+.banner__text {
+  font-size: $font-size-base + 6;
+  line-height: $line-height-base + 10;
+  color: $mischka;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 3;
+    line-height: $line-height-base + 6;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 4;
+    line-height: $line-height-base - 3;
+  }
+}

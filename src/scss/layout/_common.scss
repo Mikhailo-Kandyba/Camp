@@ -1,0 +1,19 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.holder-btn {
+  padding: 0 27px;
+}
